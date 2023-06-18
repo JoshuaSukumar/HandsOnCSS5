@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    margin: 20px 40px;
+}
+.navbar-mean {
+    margin-right: -120px;
+    text-decoration: none;
+}
+a {
+    color: white;
+    text-decoration: none ;
+}
+.icon{
+    margin-top: 15px;
+}
+.container2{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    color: white;
+    padding: 8px;
+}
+h1{
+    font-size: 100px;
+}
+.left-container p{
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button {
+    margin-top: 15px;
+    width: 180px;
+    height: 40px;
+    border: 0px solid white;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.right-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 30px;
+    margin-top: -100px;
+}
+.box{
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration:0.5s;
+}
+.box:hover {
+    transform: translateY(-15px);
+}
+.box1 {
+    background-image: url(./pic-1.png);
+    background-size: cover;
+}
+.box2{
+    background-image: url(./pic-2.png);
+    background-size: cover;
+}
+.box3 {
+    background-image: url(./pic-3.png);
+    background-size: cover;
+}
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+}
+h4{
+    margin: 15px 15px;
+}
+.right-container p {
+    margin: 15px 15px;
+    font-size: 10px;
+}
+
+/* tablet view */
+@media screen and (min-width:500px) and (max-width:900px) {
+    body{
+        background-size: contain;
+    }
+    .container2{
+        flex-direction: column;
+        margin:5px 90px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .right-container{
+        grid-template-columns: 450px;
+        justify-content: center;
+        margin: 50px;
+        background-position: center;
+    }
+}
+
+/* Mobile view */
+@media screen and (min-width:250px) and (max-width:500px) {
+    ul li{
+        display: block;
+    }
+    .container2{
+        flex-direction: column;
+        margin: -50px 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .right-container{
+        grid-template-columns: 200px;
+        justify-content: center;
+        margin: 50px;
+    }
+}
